@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO RETO 3</title>
+    <style>
+
+        button{
+            width: 30%;
+            padding: 20px;
+            margin-top: 20px;
+            background-color: green;
+            color: white;
+            border: 1px solid green;
+            cursor: pointer;
+             }
+        form {
+            padding: 20px;
+            border: 1px;
+            background-color: orange;
+            margin-top: 60px;
+        }
+
+        label[name="sexf"] {
+            font-size: 20px;
+            background-color: orange;
+            }
+            
+        label[name="sexm"] {
+            font-size: 20px;
+            background-color: orange;
+            }
+        input[name="sex"]{
+            border: 1px;
+            background-color: orange;
+            }
+
+    </style>
+</head>
+<body>
+    <form action="#">
+        <input required pattern="a-z" type="text" placeholder="NOMBRE" name="name" id="" >
+        <input required pattern="a-z" type="text" placeholder="APELLIDO" name="name" id="" >
+        <hr>
+        <br>
+        <input required pattern="1-9" min="18" max="80" type="number" placeholder="EDAD" name="age" id="">
+        <div>
+        <label for="">Elige tu Sexo</label>
+        <br>
+        <div>
+        <label name="sexf">
+        F
+        <input required name="sex" type="radio" value="F">
+        </label>
+        <label name="sexm">
+        M
+        <input required name="sex" type="radio" value="M">
+        </label>
+    </div>
+    </div>
+        <br>
+        <input required pattern="a-z|1-9" minlength="8" maxlength="9" type="text" placeholder="DNI" name="DNI" id="" >
+        <input required type="email" placeholder="CORREO" name="correo" id="">
+        <br>
+        <button required type="submit">Enviar</button>
+    </form>
+</body>
+</html>
